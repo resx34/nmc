@@ -1,0 +1,28 @@
+header {
+    height: 120px;
+    background-color: #1f1f5d;
+    z-index: 22;
+}
+
+.site-title {
+    height: 120px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.site-title__logo {
+    height: 100px;
+}
+
+.site-title__name {
+    font-size: 17px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.header-menu {
+    background-color: #2f2f83;
+    height: 50px;
+    color: #fff;
+}

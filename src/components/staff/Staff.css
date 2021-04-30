@@ -1,0 +1,26 @@
+.flex-staff-list {
+	display: flex;
+	flex-wrap: wrap;
+	
+	max-width: 990px; /* макс ширина */
+	margin: 0 auto; /* выровняем по центру */
+}
+
+.item{
+	flex:1 1 calc(33.33% - 30px); /* отнимем margin и скажем растягиваться */
+	margin:5px;
+	box-sizing:border-box; /* чтобы внутренний отступ не влиял когда там будет текст... */
+	min-width:170px; /* мин. ширина блока, чтобы переносились на другой ряд */
+    text-align:center; 
+    background-color: rgb(250, 248, 248);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.flex-staff-list img {
+    /* width: 200px;
+    height: 200px; */
+    min-height: 200px;
+    min-width: 170px;
+    object-fit: cover;
+    padding-bottom: 15px;
+}
