@@ -1,26 +1,44 @@
 .flex-staff-list {
 	display: flex;
 	flex-wrap: wrap;
-	
-	max-width: 990px; /* макс ширина */
+	max-width: 970px; /* макс ширина */
 	margin: 0 auto; /* выровняем по центру */
 }
 
 .item{
-	flex:1 1 calc(33.33% - 30px); /* отнимем margin и скажем растягиваться */
-	margin:5px;
+	flex:1 1 calc(33.33% - 60px); /* отнимем margin и скажем растягиваться */
+	margin:10px 10px;
 	box-sizing:border-box; /* чтобы внутренний отступ не влиял когда там будет текст... */
-	min-width:170px; /* мин. ширина блока, чтобы переносились на другой ряд */
+	min-width:250px; /* мин. ширина блока, чтобы переносились на другой ряд */
     text-align:center; 
     background-color: rgb(250, 248, 248);
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
+figure {
+    margin: 20px;
+}
+
+.item:hover {
+    transition: all 0.4s ease;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(11, 0, 168, 0.37);
+    transform: scale(1.06);
+}
+
 .flex-staff-list img {
-    /* width: 200px;
-    height: 200px; */
-    min-height: 200px;
-    min-width: 170px;
+    width: 100%;
+    height: 235px;
     object-fit: cover;
     padding-bottom: 15px;
+    /* vertical-align: middle;
+    max-width: 200px;
+    height: 200px;
+    padding-bottom: 15px; */
+} 
+
+a {
+    text-decoration: none;
+    color: black;
 }
+
+

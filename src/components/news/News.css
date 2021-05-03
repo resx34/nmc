@@ -1,0 +1,10 @@
+.aaaa {
+    font-size: 50px;
+    text-align: center;
+    height: 700px;
+    width: 100%;
+    color: cornsilk;
+    font-weight: 700;
+    background: linear-gradient(rgba(9, 0, 94, 0.911), rgba(3, 0, 158, 0.651)),
+    url('./citi0499-_dsc6755.jpg') center/ cover;
+}

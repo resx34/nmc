@@ -1,4 +1,5 @@
 import React from 'react';
+import './News.css';
 
 
 class News extends React.Component {
@@ -11,7 +12,9 @@ class News extends React.Component {
             Новости
           </div>
         </h1>
-
+        <div className="aaaa">
+          Саратовский университет
+        </div>
 
       <div className="container">
 
