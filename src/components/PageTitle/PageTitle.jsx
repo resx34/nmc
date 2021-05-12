@@ -18,8 +18,8 @@ useEffect(() => {
       <div className= "page-title"         
       style = {{transform: `translateY(${offsetY *0.6}px)`}} 
       >
-        <h1>{props.title}</h1>
-        {/* <img src={logo} alt="logotip"></img> */}
+        <h2>{props.title}</h2>
+        <img src={logo} alt="logotip"></img>
       </div>
     </>
   );

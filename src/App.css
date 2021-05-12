@@ -12,9 +12,9 @@
   width: 100vw;
   z-index: 15;
   background-color: #fff;
-  padding-top: 70px;
-  height: 2000px;
-  overflow-x: hidden;
+  padding-top: 50px;
+  min-height: 1000px;
+  /* overflow-x: hidden; */
 } 
 
 

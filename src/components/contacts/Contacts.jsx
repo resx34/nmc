@@ -7,27 +7,28 @@ class Contacts extends React.Component {
     return (
       <>
         <PageTitle title="Контакты"></PageTitle>
-          <div className="contacts-card">
-          <div className="container">
-            <div className="container-text">
-              Culpa culpa dolore ad anim reprehenderit ipsum aliqua. Laboris ullamco dolor ad consequat.
-              Culpa irure consequat cillum do voluptate consequat labore laborum excepteur dolor excepteur.
-              Et aliqua reprehenderit tempor duis tempor voluptate magna nulla voluptate velit do incididunt esse fugiat.
-              Dolore cupidatat magna id aliqua eu sit quis culpa adipisicing quis sint non esse. Enim minim eiusmod anim qui Lorem laboris eiusmod eiusmod.
-              Culpa culpa dolore ad anim reprehenderit ipsum aliqua. Laboris ullamco dolor ad consequat.
-              Culpa irure consequat cillum do voluptate consequat labore laborum excepteur dolor excepteur.
-              Et aliqua reprehenderit tempor duis tempor voluptate magna nulla voluptate velit do incididunt esse fugiat.
-              Dolore cupidatat magna id aliqua eu sit quis culpa adipisicing quis sint non esse. Enim minim eiusmod anim qui Lorem laboris eiusmod eiusmod.
-              Culpa culpa dolore ad anim reprehenderit ipsum aliqua. Laboris ullamco dolor ad consequat.
-              Culpa irure consequat cillum do voluptate consequat labore laborum excepteur dolor excepteur.
-              Et aliqua reprehenderit tempor duis tempor voluptate magna nulla voluptate velit do incididunt esse fugiat.
-              Dolore cupidatat magna id aliqua eu sit quis culpa adipisicing quis sint non esse. Enim minim eiusmod anim qui Lorem laboris eiusmod eiusmod.
-              Culpa culpa dolore ad anim reprehenderit ipsum aliqua. Laboris ullamco dolor ad consequat.
-              Culpa irure consequat cillum do voluptate consequat labore laborum excepteur dolor excepteur.
-              Et aliqua reprehenderit tempor duis tempor voluptate magna nulla voluptate velit do incididunt esse fugiat.
-              Dolore cupidatat magna id aliqua eu sit quis culpa adipisicing quis sint non esse. Enim minim eiusmod anim qui Lorem laboris eiusmod eiusmod.
-              </div>
+        <div className="page">
+          <div className="container-text">
+            Culpa culpa dolore ad anim reprehenderit ipsum aliqua. Laboris ullamco dolor ad consequat.
+            Culpa irure consequat cillum do voluptate consequat labore laborum excepteur dolor excepteur.
+            Et aliqua reprehenderit tempor duis tempor voluptate magna nulla voluptate velit do incididunt esse fugiat.
+            Dolore cupidatat magna id aliqua eu sit quis culpa adipisicing quis sint non esse. Enim minim eiusmod anim qui Lorem laboris eiusmod eiusmod.
+            Culpa culpa dolore ad anim reprehenderit ipsum aliqua. Laboris ullamco dolor ad consequat.
+            Culpa irure consequat cillum do voluptate consequat labore laborum excepteur dolor excepteur.
+            Et aliqua reprehenderit tempor duis tempor voluptate magna nulla voluptate velit do incididunt esse fugiat.
+            Dolore cupidatat magna id aliqua eu sit quis culpa adipisicing quis sint non esse. Enim minim eiusmod anim qui Lorem laboris eiusmod eiusmod.
+            Culpa culpa dolore ad anim reprehenderit ipsum aliqua. Laboris ullamco dolor ad consequat.
+            Culpa irure consequat cillum do voluptate consequat labore laborum excepteur dolor excepteur.
+            Et aliqua reprehenderit tempor duis tempor voluptate magna nulla voluptate velit do incididunt esse fugiat.
+            Dolore cupidatat magna id aliqua eu sit quis culpa adipisicing quis sint non esse. Enim minim eiusmod anim qui Lorem laboris eiusmod eiusmod.
+            Culpa culpa dolore ad anim reprehenderit ipsum aliqua. Laboris ullamco dolor ad consequat.
+            Culpa irure consequat cillum do voluptate consequat labore laborum excepteur dolor excepteur.
+            Et aliqua reprehenderit tempor duis tempor voluptate magna nulla voluptate velit do incididunt esse fugiat.
+            Dolore cupidatat magna id aliqua eu sit quis culpa adipisicing quis sint non esse. Enim minim eiusmod anim qui Lorem laboris eiusmod eiusmod.
           </div>
+
+          
+
         </div>
       </>
     );
