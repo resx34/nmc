@@ -29,7 +29,7 @@ header .banner {
 }
 
 .header-active .banner {
-    opacity: 0.4;
+    background: #1f1f5d;
 }
 
 header .logo {
@@ -39,14 +39,14 @@ header .logo {
     transform: translate(-50%, -50%);
     font-size: 5vw;
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
     transition: 1s;
     z-index: 1;
 }
 
 .header-active .logo {
     position: absolute;
-    font-size: 1.6em;
+    font-size: 1.5em;
     left: 100px;
     transform: translate(0, -50%);
 }
@@ -75,9 +75,6 @@ nav ul {
     visibility: visible;
 }
 
-
-
-
 nav ul li {
     list-style: none;
 }
@@ -94,10 +91,21 @@ nav ul li a:hover {
     color: rgba(87, 67, 201, 0.925);
 }
 
+@media (max-width:1200px) {
+    .header-active .logo {
+        left: 0px;
+        width: 40%;
+    }
+    .header-active nav {
+        padding: 10px;
+    }
+  }
+
 @media (max-width:992px) {
     .header-active .logo {
         left: 20px;
     }
+
     .header-active .banner {
         opacity: 0;
     }
@@ -129,8 +137,8 @@ nav ul li a:hover {
 
     .header-active .burger {
         position: fixed;
-        top: 15px;
-        right: 40px;
+        top: 21px;
+        right: 16px;
         width: 2rem;
         height: 2rem;
         display: flex;
@@ -152,8 +160,8 @@ nav ul li a:hover {
 
     .header-active .burger-active {
         position: fixed;
-        top: 15px;
-        right: 40px;
+        top: 21px;
+        right: 16px;
         width: 2rem;
         height: 2rem;
         display: flex;
@@ -179,5 +187,13 @@ nav ul li a:hover {
         border-radius: 10px;
         transform-origin: 1px;
         transition: all 0.3s linear;
+    }
+}
+
+@media (max-width:767px) {
+    .header-active .logo {
+        left: 10px;
+        width: 50%;
+        font-size: 1.2em;
     }
 }

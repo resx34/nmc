@@ -1,31 +1,42 @@
 .nav-item {
     flex: 1;
-    /* background-color: #FFF; */
+    flex-wrap: wrap;
+    background-color: #FFF;
     border: 1px solid #ececec00;
     border-radius: 20px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0, 3, 190, 0.432);
     padding: 10px 15px;
     margin: 2px;
     cursor: pointer;
-    border-radius: 2px;
+    border-radius: 12px;
     min-height: 100px;
+    min-width: 240px;
     overflow: hidden;
     outline: none;
-    /* text-transform: uppercase; */
     font-weight: 600;
     font-size: 15px;
+
+    transition: ease 0.4s;
+    -webkit-box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
+    -moz-box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
+    box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
   }
   
   .nav-item.active {
-    background-color: #2f2f83;
+    /* background-color: #2f2f83; */
     border-bottom-color: transparent;
-    color: #FFF;
+    /* color: #FFF; */
+
+    -webkit-box-shadow: 5px 8px 11px 3px rgba(0, 25, 154, 0.62);
+    -moz-box-shadow: 5px 8px 11px 3px rgba(0, 25, 154, 0.62);
+    box-shadow: 5px 8px 11px 3px rgba(0, 25, 154, 0.62);
   }
   
   .vertical .nav-item {
     border-radius: 5px 0 0 5px;
   }
 
-  @media all and (max-width: 768px) {
-    .nav-item {font-size: 11px; font-weight: 300;}
-  }
+  @media all and (max-width: 767px) {
+    .nav-item {
+      margin: 5px 15px;
+    }
+}

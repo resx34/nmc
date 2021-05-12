@@ -1,44 +1,46 @@
 .flex-staff-list {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 970px; /* макс ширина */
-	margin: 0 auto; /* выровняем по центру */
-}
-
-.item{
-	flex:1 1 calc(33.33% - 60px); /* отнимем margin и скажем растягиваться */
-	margin:10px 10px;
-	box-sizing:border-box; /* чтобы внутренний отступ не влиял когда там будет текст... */
-	min-width:250px; /* мин. ширина блока, чтобы переносились на другой ряд */
-    text-align:center; 
-    background-color: rgb(250, 248, 248);
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
 }
 
 figure {
-    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
 }
 
-.item:hover {
-    transition: all 0.4s ease;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(11, 0, 168, 0.37);
-    transform: scale(1.06);
+.item {
+    max-width: 270px;
+    min-height: 300px;
+    margin: 11px 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 12px;
+    transition: ease 0.4s;
+    -webkit-box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
+    -moz-box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
+    box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
 }
 
-.flex-staff-list img {
-    width: 100%;
-    height: 235px;
-    object-fit: cover;
-    padding-bottom: 15px;
-    /* vertical-align: middle;
-    max-width: 200px;
-    height: 200px;
-    padding-bottom: 15px; */
-} 
-
-a {
+.item a {
     text-decoration: none;
     color: black;
 }
 
+.item img {
+    min-height: 200px;
+    object-fit: cover;
+    /* background-color: #1f1f5d2f;
+    border-radius: 10px; */
+}
 
+.item:hover {
+    transform: scale(1.06);
+    -webkit-box-shadow: 5px 8px 11px 3px rgba(0, 25, 154, 0.62);
+    -moz-box-shadow: 5px 8px 11px 3px rgba(0, 25, 154, 0.62);
+    box-shadow: 5px 8px 11px 3px rgba(0, 25, 154, 0.62);
+}

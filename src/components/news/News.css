@@ -1,10 +1,49 @@
-.aaaa {
-    font-size: 50px;
-    text-align: center;
-    height: 700px;
-    width: 100%;
-    color: cornsilk;
-    font-weight: 700;
-    background: linear-gradient(rgba(9, 0, 94, 0.911), rgba(3, 0, 158, 0.651)),
-    url('./citi0499-_dsc6755.jpg') center/ cover;
+.news-block {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0px;
+    -webkit-box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
+    -moz-box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
+    box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
+    transition: 0.3s;
+    cursor: pointer;
 }
+
+
+.news-block:hover {
+    transform: scale(1.04);
+    -webkit-box-shadow: 5px 8px 11px 3px rgba(0, 25, 154, 0.62);
+    -moz-box-shadow: 5px 8px 11px 3px rgba(0, 25, 154, 0.62);
+    box-shadow: 5px 8px 11px 3px rgba(0, 25, 154, 0.62);
+}
+
+
+
+.news-block-img img{
+    max-width: 200px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.news-block-part-text {
+    display: flex;
+    flex-direction: column;
+    /* min-width: 500px; */
+}
+
+.news-block-title {
+    color: rgb(0, 25, 154);
+    font-size: 1.6em;
+}
+
+@media (max-width:992px) {
+    .news-block  {
+        display: flex;
+        flex-direction: column;
+    }
+  }

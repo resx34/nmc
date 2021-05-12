@@ -6,11 +6,9 @@ function Header () {
   const [header, setHeader] = useState(false);
 
   const changeBackground  = () => {
-    if(window.scrollY >= 10) {
+    if(window.scrollY >= 0) {
       setHeader(true);
-    } else {
-      setHeader(false);
-    }
+    } 
   }
 
   const [isActive, setActive] = useState(false)
@@ -18,7 +16,6 @@ function Header () {
   const toogleClass = () => {
     setActive(!isActive);
   };
-
 
   window.addEventListener('scroll', changeBackground)
 

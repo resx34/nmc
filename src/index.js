@@ -9,12 +9,12 @@ import Contacts from './components/contacts/Contacts';
 import News from './components/news/News';
 import Staff from './components/staff/Staff';
 import Labs from './components/labs/Labs';
-
-
+import ScrollToTop from './components/scrollToTop/ScrollToTop'
 
 ReactDOM.render(
   <BrowserRouter>
     <App>
+    <ScrollToTop />
       <Switch>
         <Route exact path='/' component={Main} />
         <Route path='/staff' component={Staff} />
