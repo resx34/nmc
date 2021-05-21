@@ -1,0 +1,95 @@
+.three {
+    min-height: 80vh;
+    width: 100%;
+    background: linear-gradient(rgba(37, 37, 110, 0.88), rgba(31,31,93, 0.95)),
+    url('../header/sgu.jpg') center/ cover;
+    color: #fff;
+    display: flex;
+    padding: 100px 0 0 0 ;
+}
+
+.section-three-text {
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.long-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.long-text h3 {
+    font-size: 2.5em;
+    max-width: 600px;
+    margin: 0;
+}
+
+.long-text p {
+    max-width: 500px;
+}
+
+.long-text p::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 160px;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+}
+
+.short-text {
+    margin: 100px 10px;
+}
+
+.short-text ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.short-text li {
+    max-width: 200px;
+    min-height: 150px;
+    list-style: none;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.number {
+    font-size: 4em;
+    max-width: 200px;
+    height: 80px;
+}
+
+.number-text {
+    text-align: center;
+    height: 70px;
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width:1200px) {
+    .long-text p::before {
+        content: '';
+        /* display: block; */
+        width: 50%;
+        height: 1px;
+        background: #fff;
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 15px;
+    }
+}

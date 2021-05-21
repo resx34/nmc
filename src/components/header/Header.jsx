@@ -33,6 +33,7 @@ function Header () {
                 <li><Link to='/'>Главная</Link></li>
                 <li><Link to='/staff'>Сотрудники</Link></li>
                 <li><Link to='/labs'>Лаборатории</Link></li>
+                <li><Link to='/centers'>Научные центры</Link></li>
                 <li><Link to='/news'>Новости</Link></li>
                 <li><Link to='/contacts'>Контакты</Link></li>
           </ul>

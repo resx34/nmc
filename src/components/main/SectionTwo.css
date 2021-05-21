@@ -1,0 +1,63 @@
+.second {
+    min-height: 50vh;
+    width: 100vw;
+    margin: 0;
+    /* background-image: linear-gradient( 179.7deg,  rgba(31,31,93,1) 18.6%, rgba(0,84,182,1) 103.1% ); */
+    /* background-color: pink; */
+    /* border-top-left-radius: 50px;
+    border-top-right-radius: 50px; */
+    padding: 100px 0;
+
+}
+
+.patents {
+    min-height: 500px;
+    max-width: 1200px;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
+    -moz-box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
+    box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 18px;
+    align-content: center;
+}
+
+.patents h3 {
+    font-size: 2.8em;
+    font-weight: normal;
+    display: flex;
+    text-align: center;
+    color: #1f1f5d;
+}
+
+.patents-image {
+    display: flex;
+    align-items: center;
+}
+
+.patents-image ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    align-items: center;
+}
+
+.patents-image li {
+    list-style: none;
+    padding: 10px 10px;
+}
+
+.patents-image img {
+    height: 300px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
+    -moz-box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
+    box-shadow: 5px 8px 11px 3px rgba(208, 208, 208, 0.62);
+}

@@ -9,6 +9,7 @@ import Contacts from './components/contacts/Contacts';
 import News from './components/news/News';
 import Staff from './components/staff/Staff';
 import Labs from './components/labs/Labs';
+import Centers from './components/centers/Centers';
 import ScrollToTop from './components/scrollToTop/ScrollToTop'
 
 ReactDOM.render(
@@ -19,6 +20,7 @@ ReactDOM.render(
         <Route exact path='/' component={Main} />
         <Route path='/staff' component={Staff} />
         <Route path='/labs' component={Labs} />
+        <Route path='/centers' component={Centers} />
         <Route path='/news' component={News} />
         <Route path='/contacts' component={Contacts} />
       </Switch>

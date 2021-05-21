@@ -1,0 +1,267 @@
+main {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    font-size: 1.1rem;
+    margin-top: 0px;
+}
+
+.ones {
+    height: 100vh;
+    width: 100vw;
+
+    margin-top: 0px;
+
+    padding-top: 200px;
+}
+
+.main-name {
+    height: 14vh;
+    width: 45%;
+    background-color: #1f1f5d;
+    color: #fff;
+}
+
+.main-name-text {
+    padding-left: 10%;
+    padding-top: 3.5vh;
+    font-size: 2.5vw;
+}
+
+.animated-item {
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 900px;
+    max-width: 100%;
+    opacity: 0;
+}
+
+.animated-item-active {
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 900px;
+    max-width: 100%;
+}
+
+.item-text {
+    padding: 10px 10px;
+    max-width: 400px;
+    height: 100%;
+    font-size: 19px;
+    opacity: 0;
+}
+
+.item-active-text {
+    padding: 10px 10px;
+    max-width: 400px;
+    height: 100%;
+    font-size: 19px;
+    animation-name: myAnimationLeft;
+    animation-duration: 2s;
+
+}
+
+.item-active-image {
+    padding: 10px 10px;
+    background-color: rgba(10, 166, 194, 0.568);
+    background: url('./img/lab.jpg') center/cover;
+    width: 50%;
+    height: 30em;
+    border-radius: 30px;
+    animation-name: myAnimationRight;
+    animation-duration: 2.1s;
+}
+
+.item-image{
+    padding: 10px 10px;
+    background-color: rgba(10, 166, 194, 0.568);
+    background: url('./img/lab.jpg') center/cover;
+    width: 50%;
+    height: 30em;
+    border-radius: 30px;
+    opacity: 0;
+}
+
+.block-link {
+    opacity: 0;
+}
+
+.block-link-active {
+    opacity: 1;
+    transition: 0.4s;
+    margin: 20px 0;
+    width: 100%;
+    min-height: 600px;
+    background-color: #1f1f5d;
+    /* background-image: linear-gradient(to top, #000769 0%, #214da3 100%, #6b8cce 100%, #a2b6df 100%); */
+}
+.row-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    min-height: 600px;
+    max-width: 1200px;
+}
+
+.row-links .link {
+    position: relative;
+    width: 180px;
+    height: 47px;
+    text-align: center;
+    text-decoration: none;
+    left: 35%;
+    top: -50%;
+    border: 3px solid #fff; 
+}
+
+.row-links .link a {
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 25px;
+    color: #fff;
+    position: relative;
+    top: 17%;
+}
+
+.lab-link {
+    width: 500px;
+    height: 500px;
+    margin: 10px 10px;
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+
+.center-link {
+    width: 500px;
+    height: 500px;
+    margin: 10px 10px;
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+
+.lab-link-active {
+    width: 500px;
+    height: 500px;
+    margin: 10px 10px;
+    transition: 0.5s ease;
+    overflow: hidden;
+    animation-name: myAnimationLeft;
+    animation-duration: 1.8s;
+    border-radius: 20px;
+}
+.lab-link-active img {
+    transition: 0.5s ease;
+    object-fit: cover;
+}
+
+.lab-link-active:hover img{
+    transform: scale(1.12);
+    filter: brightness(25%);
+}
+
+.center-link-active:hover img{
+    transform: scale(1.12);
+    filter: brightness(25%);
+}
+
+.center-link-active {
+    width: 500px;
+    height: 500px;
+    margin: 10px 10px;
+    transition: 0.5s ease;
+    overflow: hidden;
+    animation-name: myAnimationRight;
+    animation-duration: 1.8s;
+    border-radius: 20px;
+}
+
+.center-link-active img {
+    transition: 0.5s ease;
+}
+
+
+
+@media all and (max-width: 992px) {
+    .main-name-text  {
+        font-size: 4vw;
+    } 
+    .animated-item-active {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .item-active-image {
+        width: calc(100vw - 50px) ;
+    }
+    .center-link-active, .lab-link-active, .item-active-image, .item-active-text   {
+        animation-duration: 3s;
+        animation-name: animationOpacity;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .main-name-text {
+        font-size: 5vw;
+    } 
+    .main-name {
+        height: 11vh;
+    }
+}
+
+/* @keyframes myAnimationLeft {
+    from {
+        position: relative;
+        left: -1000px;
+    }
+    to {
+        position: relative;
+        left: 0px;
+    }
+}
+
+@keyframes myAnimationRight {
+    from {
+        position: relative;
+        left: 1000px;
+        opacity: 0;
+    }
+    to {
+        position: relative;
+        left: 0px;
+        opacity: 1;
+    }
+} */
+
+@keyframes myAnimationLeft {
+    from {
+        transform: translate(-100%, 0);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes myAnimationRight {
+    from {
+        transform: translate(100%, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+
+@keyframes animationOpacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
