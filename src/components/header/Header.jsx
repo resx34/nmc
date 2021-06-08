@@ -4,21 +4,16 @@ import { Link } from 'react-router-dom';
 
 function Header () {
   const [header, setHeader] = useState(false);
-
   const changeBackground  = () => {
     if(window.scrollY >= 0) {
       setHeader(true);
     } 
   }
-
   const [isActive, setActive] = useState(false)
-
   const toogleClass = () => {
     setActive(!isActive);
   };
-
   window.addEventListener('scroll', changeBackground)
-
     return (
       <header className={ header? 'header-active' : 'header'}>
         <div className="banner"></div>
@@ -31,9 +26,10 @@ function Header () {
         <nav className={isActive ? 'active' : null} onClick={toogleClass}>
           <ul>
                 <li><Link to='/'>Главная</Link></li>
-                <li><Link to='/staff'>Сотрудники</Link></li>
+                <li><Link to='/services'>Услуги</Link></li>
                 <li><Link to='/labs'>Лаборатории</Link></li>
                 <li><Link to='/centers'>Научные центры</Link></li>
+                <li><Link to='/staff'>Сотрудники</Link></li>
                 <li><Link to='/news'>Новости</Link></li>
                 <li><Link to='/contacts'>Контакты</Link></li>
           </ul>
@@ -41,6 +37,4 @@ function Header () {
       </header>
     );
   }
-
-  
   export default Header;

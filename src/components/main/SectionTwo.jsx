@@ -2,7 +2,6 @@ import React from 'react';
 import './SectionTwo.css';
 import PatentsImage from './PatentsImage'
 
-
 function SectionTwo() {
     return (
         <section className="second">
@@ -15,5 +14,4 @@ function SectionTwo() {
         </section>
     );
 }
-
 export default SectionTwo;

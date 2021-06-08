@@ -52,9 +52,8 @@ header .logo {
     max-width: 350px;
 }
 
-
 nav {
-    padding: 0 100px;
+    padding: 0 85px;
     position: relative;
     display: flex;
     z-index: 1;
@@ -76,11 +75,11 @@ nav ul {
     visibility: visible;
 }
 
-nav ul li {
+nav li {
     list-style: none;
 }
 
-nav ul li a {
+nav a {
     color: #fff;
     display: inline-block;
     padding: 10px 15px;
@@ -88,21 +87,26 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
+nav a:hover {
     color: rgba(106, 90, 197, 0.925);
 }
 
-@media (max-width:1200px) {
+@media (max-width:1400px) {
     .header-active .logo {
         left: 10px;
         width: 40%;
     }
-    .header-active nav {
-        padding: 10px;
+
+    nav {
+        padding: 0 15px;
+    }
+
+    nav a {
+        padding: 10px 10px;
     }
   }
 
-@media (max-width:992px) {
+@media (max-width:1200px) {
     .header-active .logo {
         left: 20px;
     }
@@ -131,7 +135,7 @@ nav ul li a:hover {
         padding: 0;
     }
 
-    nav ul li a {
+    nav a {
         font-size: 1.5em;
     }
 

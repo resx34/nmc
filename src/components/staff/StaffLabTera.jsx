@@ -6,7 +6,6 @@ import tuchin from './img/tuchin.png';
 import goryacheva from './img/goryacheva.png';
 import svenskaya from './img/svenskaya.png';
 import lomova from './img/lomova.png';
-
 import StaffCard from '../staffCard/StaffCard'
 
 

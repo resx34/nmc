@@ -18,33 +18,33 @@
 .long-text {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-bottom: 100px;
+    flex-wrap: wrap
 }
 
-.long-text h3 {
-    font-size: 2.5em;
-    max-width: 600px;
-    margin: 0;
+.long-text-left {
+    font-size: 2.2em;
+    font-weight: 700;
+    max-width: 550px;
+    min-height: 200px;
+    word-wrap: break-word;
+    border-right: 1px solid #fff;
+    padding-right: 10px;
 }
 
-.long-text p {
+.long-text-right {
     max-width: 500px;
+    margin-left: 20px;
+    font-size: 1.1em;
+    font-weight: 300;
 }
 
-.long-text p::before {
-    content: '';
-    display: block;
-    width: 1px;
-    height: 160px;
-    background: #fff;
-    position: absolute;
-    left: 50%;
+.long-text-right p {
+    padding: 0;
+    margin: 0 0 15px 0;
 }
 
 .short-text {
-    margin: 100px 10px;
+    margin: 100px 10px 50px 10px;
 }
 
 .short-text ul {
@@ -54,13 +54,14 @@
     align-items: center;
     justify-content: center;
     padding: 0;
+    
 }
 
 .short-text li {
-    max-width: 200px;
+    max-width: 150px;
     min-height: 150px;
     list-style: none;
-    margin: 0 50px;
+    margin: 25px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,26 +71,32 @@
     font-size: 4em;
     max-width: 200px;
     height: 80px;
+    margin-bottom: 20px;
 }
 
 .number-text {
     text-align: center;
     height: 70px;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    font-weight: 200;
     display: flex;
     align-items: center;
 }
 
-@media (max-width:1200px) {
-    .long-text p::before {
-        content: '';
-        /* display: block; */
-        width: 50%;
-        height: 1px;
-        background: #fff;
-        position: relative;
-        left: 0;
-        top: 0;
-        margin-bottom: 15px;
+@media (max-width: 500px) {
+    .long-text-left {
+        font-size: 2em;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .long-text-left {
+        border-bottom: 1px solid #fff;
+        border-right: none;
+        padding: 0 0 20px 0;
+    }
+    .long-text-right {
+        margin: 20px 0px;
     }
 }

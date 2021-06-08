@@ -10,7 +10,8 @@ import News from './components/news/News';
 import Staff from './components/staff/Staff';
 import Labs from './components/labs/Labs';
 import Centers from './components/centers/Centers';
-import ScrollToTop from './components/scrollToTop/ScrollToTop'
+import Services from './components/services/Services'
+import ScrollToTop from './components/scrollToTop/ScrollToTop';
 
 ReactDOM.render(
   <BrowserRouter>
@@ -19,6 +20,7 @@ ReactDOM.render(
       <Switch>
         <Route exact path='/' component={Main} />
         <Route path='/staff' component={Staff} />
+        <Route path='/services' component={Services} />
         <Route path='/labs' component={Labs} />
         <Route path='/centers' component={Centers} />
         <Route path='/news' component={News} />
@@ -29,7 +31,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

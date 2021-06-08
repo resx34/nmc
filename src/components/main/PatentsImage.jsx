@@ -18,5 +18,4 @@ function PatentsImage() {
         </div>
     );
 }
-
 export default PatentsImage;

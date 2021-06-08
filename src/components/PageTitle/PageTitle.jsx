@@ -11,18 +11,15 @@ useEffect(() => {
 
   return () => window.removeEventListener("scroll", handleScroll);
 }, [])
-
   return (
     <>
-
       <div className= "page-title"         
-      style = {{transform: `translateY(${offsetY *0.6}px)`}} 
+        style = {{transform: `translateY(${offsetY *0.6}px)`}} 
       >
-        <h2>{props.title}</h2>
-        <img src={logo} alt="logotip"></img>
+        <h2 style = {{transform: `translateY(${offsetY *0.17}px)`}} >{props.title}</h2>
+        <img src={logo} alt="logotip" style = {{transform: `translateY(${offsetY *0.1}px)`}} ></img>
       </div>
     </>
   );
 }
-
 export default PageTitle;
